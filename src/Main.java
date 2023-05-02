@@ -47,7 +47,7 @@ public class Main {
         System.out.println("Средняя сумма трат за месяц составила " + middleSalary + " рублей");
     }
     public static void task4 () {
-        System.out.println("Задача 4");
+        System.out.println("Задача4");
         char[] reverseFullName = { 'n', 'a', 'v', 'I', ' ', 'v', 'o', 'n', 'a', 'v', 'I'};
         char[0] = "n";
         for (int i =0; i = reverseFullName.length -1; i--) {
