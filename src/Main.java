@@ -16,9 +16,12 @@ public class Main {
     public static void task1() {
         System.out.println("Задача 1");
         int[] salary = generateRandomArray();
-        for (int i = 0; i <= salary.length - 1; i++) {
-            System.out.println(salary[i]);
+        int sum = 0;
+        for (int i = 0; i < salary.length - 1; i++) {
+            sum += salary[i];
         }
+        System.out.println("Сумма трат за месяц составила " + sum + " рублей");
+
     }
 
     public static void task2 () {
@@ -35,13 +38,13 @@ public class Main {
     public static void task3 () {
         System.out.println("Задача 3");
         int[] salary = generateRandomArray();
-        int maxSalary = salary[0];
-        int minSalary = salary[0];
+        double maxSalary = salary[0];
+        double minSalary = salary[0];
         double middleSalary = 0;
         for (int i = 0; i < salary.length - 1; i++) {
             if (i < minSalary) minSalary = i;
             if (i > maxSalary) maxSalary = i;
-            middleSalary += salary[i]/salary.length;
+            middleSalary += (double) salary[i]/salary.length;
         }
 
         System.out.println("Средняя сумма трат за месяц составила " + middleSalary + " рублей");
