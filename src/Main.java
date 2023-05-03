@@ -33,7 +33,7 @@ public class Main {
             if (a < minSalary) minSalary = a;
             if (a > maxSalary) maxSalary =a;
         }
-        System.out.println("Минимальная сумма трат за день составила" + minSalary + " рублей. Максимальная сумма трат за день составила " + maxSalary +  " рублей");
+        System.out.println("Минимальная сумма трат за день составила " + minSalary + " рублей. Максимальная сумма трат за день составила " + maxSalary +  " рублей");
     }
     public static void task3 () {
         System.out.println("Задача 3");
